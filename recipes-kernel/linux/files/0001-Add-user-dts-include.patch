@@ -1,0 +1,22 @@
+From 746522a15c4e5466694e0a6488c92a1a787ce010 Mon Sep 17 00:00:00 2001
+From: Abe Kohandel <abe.kohandel@gmail.com>
+Date: Sun, 15 Aug 2021 22:50:02 -0700
+Subject: [PATCH] Add user dts include
+
+---
+ arch/arm/boot/dts/am335x-boneblack.dts | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/arch/arm/boot/dts/am335x-boneblack.dts b/arch/arm/boot/dts/am335x-boneblack.dts
+index b4feb85e171a..b66ab54c0765 100644
+--- a/arch/arm/boot/dts/am335x-boneblack.dts
++++ b/arch/arm/boot/dts/am335x-boneblack.dts
+@@ -167,3 +167,5 @@ &gpio3 {
+ 		"[NC]",
+ 		"[NC]";
+ };
++
++#include "nmisoft-vga.dtsi"
+-- 
+2.25.1
+
